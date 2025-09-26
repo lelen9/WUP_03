@@ -41,6 +41,12 @@ favstats(alcohol~Seat,data=ucdavis1)
 ```
 I can see that the people sitting middle is the highest compared to the ones sitting in the front and back. Middle (89), Front (40), and Back(36). The standard deviation for the highest is (12.580471). The middle is next with (6.225381) and the front has (3.806013).
 ## Inferential Tests
+  
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+When looking at the P-value which is 0.000116. I noticed that it is really small and telling me that there is a big statistic difference between the values.
 
 ## Conclusions
 
